@@ -1,0 +1,45 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+&__icon {
+  fill: currentColor;
+}
+
+&__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: var(--background-color);
+  color: var(--social-link-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
